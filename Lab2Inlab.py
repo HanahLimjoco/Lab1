@@ -12,15 +12,22 @@ class Student:
 students = [
     Student("Alice", 20, "001"),
     Student("Bob", 22, "002"),
-    Student("Charlie", 21, "003"),
-    Student("Dave", 19, "004"),
+    Student("Charlie", 21, "008"),
+    Student("Cents", 16, "214"),
+    Student("Marco", 24, "099"),
+    Student("Hanner", 9, "051"),
+    Student("Migs", 12, "071"),
+    Student("Dave", 100, "120"),
+    Student("Cj", 20, "201")
 ]
 
+
+# Main
 # Shuffle the list of students
 random.shuffle(students)
 
 # Sort the list of students by age
-students.sort(key=lambda x: x.name)
+students.sort(key=lambda x: x.id_num)
 
 # Display all attributes of the sorted list of students
 for student in students:
